@@ -1,0 +1,50 @@
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from 'react-icons/fa';
+
+type SocialLink = {
+  icon:  React.FC<{ className?: string }>;
+  url: string;
+  ariaLabel: string;
+};
+
+const socialLinks: SocialLink[] = [
+  {
+    icon: FaGithub,
+    url: 'https://github.com/yurileonel',
+    ariaLabel: 'GitHub profile',
+  },
+  {
+    icon: FaLinkedin,
+    url: 'https://www.linkedin.com/in/yurileonel/',
+    ariaLabel: 'LinkedIn profile',
+  },
+  {
+    icon: FaInstagram,
+    url: 'https://www.instagram.com/yurileonel_yl/?igsh=MXdsa3d5aWhwMjNueQ%3D%3D#',
+    ariaLabel: 'Instagram profile',
+  },
+  {
+    icon: FaEnvelope,
+    url: 'mailto:yurileonel.001@gmail.com',
+    ariaLabel: 'Send email',
+  },
+];
+
+export default function SocialLinks() {
+  return (
+    <div className="flex justify-center space-x-6">
+      {socialLinks.map(({ icon: Icon, url, ariaLabel }, index) => (
+        <a
+          key={index}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-gray-600 hover:text-primary dark:text-gray-300 dark:hover:text-secondary
+                     transition-colors duration-300 p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
+          aria-label={ariaLabel}
+        >
+          <Icon className="w-8 h-8" />
+        </a>
+      ))}
+    </div>
+  );
+}

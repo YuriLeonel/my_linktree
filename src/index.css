@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --gray-50: #f9fafb;
+    --gray-900: #111827;
+    /* Add other light mode variables */
+  }
+  
+  .dark {
+    --gray-50: #111827;
+    --gray-900: #f9fafb;
+    /* Add other dark mode variables */
+  }
+}
