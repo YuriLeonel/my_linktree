@@ -1,50 +1,68 @@
-# React + TypeScript + Vite
+# Yuri Leonel | LinkTree
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my LinkTree project! This is a portfolio project designed to showcase my skills and connect you with my social profiles. Built with React, TypeScript, and Vite, this project demonstrates my proficiency in modern web development technologies.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This LinkTree project serves as a central hub for all my social links and contact information. It features a clean, responsive design with a dark mode toggle, ensuring a great user experience on any device.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: A JavaScript library for building user interfaces.
+- **TypeScript**: A typed superset of JavaScript that enhances code quality and developer productivity.
+- **Vite**: A fast build tool and development server for modern web projects.
+- **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+- **React Icons**: A collection of popular icons for React applications.
+- **Netlify**: Used for deploying the project. Check it out live [here](https://yleoneldev.netlify.app/).
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Responsive Design**: The layout adapts to different screen sizes, providing a seamless experience on both desktop and mobile devices.
+- **Dark Mode**: Toggle between light and dark themes to suit your preference.
+- **Social Links**: Quick access to my GitHub, LinkedIn, Instagram, and email.
+
+## Getting Started
+
+To get started with this project, follow these steps:
+
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/yurileonel/my-linktree.git
+   cd my-linktree
+   ```
+
+2. **Install dependencies**:
+   ```sh
+   npm install
+   ```
+
+3. **Run the development server**:
+   ```sh
+   npm run dev
+   ```
+
+## Project Structure
+
+Here's a quick overview of the project's structure:
+
+```
+src/
+  ├── components/       # Reusable UI components
+  ├── hooks/            # Custom React hooks
+  ├── types/            # TypeScript type definitions
+  ├── App.tsx           # Main application component
+  ├── index.css         # Global styles
+  ├── links.config.ts   # Configuration for social links
+  ├── main.tsx          # Entry point for the React application
+public/
+  ├── index.html        # HTML template
+  ├── profile.jpg       # Profile picture
+  ├── icon.png          # Favicon
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Contact
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Feel free to reach out to me via [email](mailto:yurileonel.001@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/yurileonel/).
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Thank you for checking out my LinkTree project! I hope you find it useful and inspiring. Happy coding! 🚀
+
