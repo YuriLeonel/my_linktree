@@ -7,6 +7,9 @@ import LinkButton from './components/LinkButton';
 
 export default function App() {
   const { theme, toggleTheme } = useTheme();
+  const name = 'Yuri Leonel';
+  const title = 'Software Engineer';
+  const copyright = `© ${new Date().getFullYear()} All rights reserved`;
 
   useEffect(() => {
     document.documentElement.classList.remove('light', 'dark');
@@ -21,15 +24,15 @@ export default function App() {
         <header className="mb-8 text-center">
           <img 
             src="/profile.jpg"
-            alt="Profile"
+            alt="Profile picture"
             className="w-32 h-32 rounded-full mx-auto border-4 border-white/80 
                      shadow-xl dark:border-gray-800/80 mb-6 object-cover"
           />
           <h1 className="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-            Software Engineer
+            { name }
           </h1>
           <p className="text-gray-600 dark:text-gray-400 text-lg">
-            Building Intelligent Solutions
+            { title }
           </p>
         </header>
 
@@ -42,7 +45,7 @@ export default function App() {
         <footer className="pt-8 border-t border-gray-200 dark:border-gray-800">
           <SocialLinks />
           <p className="text-center mt-4 text-gray-600 dark:text-gray-400 text-sm">
-            © {new Date().getFullYear()} All rights reserved
+            { copyright}
           </p>
         </footer>
       </div>

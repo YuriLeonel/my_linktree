@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './index.css';
 
-// Initialize theme class before React renders
 const savedTheme = localStorage.getItem('theme') || 'light';
 document.documentElement.classList.add(savedTheme);
 
